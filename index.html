@@ -26,7 +26,7 @@
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <!--
     - google font link
   -->
@@ -87,6 +87,10 @@
           </li>
 
           <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Research</button>
+          </li>
+
+          <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Projects</button>
           </li>
           
@@ -101,7 +105,9 @@
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
-          <!-- <button   class="navbar-link"  id="darkmode">Light</button> -->
+          <li class="navbar-item">
+            <button class="navbar-link" id="darkmode" type="button" aria-label="Toggle dark mode" title="Toggle dark mode"><ion-icon name="moon-outline"></ion-icon></button>
+          </li>
           
         </ul>
 
@@ -143,6 +149,12 @@
             </li>
         
             <li class="social-item">
+              <a href="https://scholar.google.com/citations?user=_ys16kYAAAAJ&hl=en" class="social-link" title="Google Scholar" aria-label="Google Scholar">
+                <i class="fa-brands fa-google-scholar"></i>
+              </a>
+            </li>
+
+            <li class="social-item">
               <a href="https://www.researchgate.net/profile/Sanju-Basak" class="social-link">
                 <i class="fab fa-researchgate"></i>
               </a>
@@ -166,7 +178,7 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:sanjubasakndc18@gmail.com" class="contact-link">sanjubasakndc18 AT gmail DOT com</a>
+              <a href="mailto:sanju.basak@uconn.edu" class="contact-link">sanju.basak AT uconn DOT edu</a>
             </div>
 
           </li>
@@ -222,12 +234,12 @@
         <section class="about-text">
             <!-- <p><span class="no-wrap"><img src="assets/images/nerd.png" width="16px" height="auto"></span> I'm Sanju (he/him), a fresh graduate from the <span class="no-wrap"><a href="https://cse.buet.ac.bd">Department of CSE, BUET</a></span>. I am currently working as a Software Engineer - Generative AI (ezGPT) at <b>ResTech AI</b> which is an US-based startup company. My research interests lie in the fields of <b>Machine Learning, Natural Language Processing,</b> as well as <b>The Web & Information Retrieval</b>. My current career goal is to pursue a PhD program in my field of interest.</p> -->
             <p><span class="no-wrap"><img src="assets/images/nerd.png" width="16px" height="auto"></span> 
-              I'm Sanju (he/him), a recent graduate from the <span class="no-wrap"><a href="https://cse.buet.ac.bd">Department of Computer Science & Engineering (CSE)</a></span> at <span class="no-wrap"><a href="https://www.buet.ac.bd/web/">Bangladesh University of Engineering and Technology (BUET)</a></span>. Currently, I am an <b>adjunct lecturer</b> at the <b>Department of CSE, BUET</b>, and also gathering experiences as a <b>GenAI software engineer</b> at <span class="no-wrap"><a href="https://www.restechai.com/">ResTech AI</a></span>, a US-based company. My research focuses on <b>Natural Language Processing, Information Retrieval,</b> and <b>Human-AI Interaction</b>, with a special interest in <b>low-resource</b> and <b>multi-lingual language processing</b>. My career goal is to pursue a PhD in these areas, starting in <b>Fall 2025.</b></p>
+              I'm Sanju (he/him), a <b>PhD student in Computer Science</b> at the <span class="no-wrap"><a href="https://engineering.uconn.edu/academics/departments/computer-science-and-engineering/">University of Connecticut (UConn)</a></span>, where I work as a <b>Research Assistant</b> in the <span class="no-wrap"><a href="https://u2clabuconn.github.io/people.html">U2C Lab</a></span> under the supervision of <span class="no-wrap"><a href="https://hesuining.weebly.com/">Dr. Suining He</a></span>. I received my B.Sc. in Computer Science &amp; Engineering from <span class="no-wrap"><a href="https://www.buet.ac.bd/web/">Bangladesh University of Engineering and Technology (BUET)</a></span>. My research focuses on <b>Natural Language Processing, Information Retrieval,</b> and <b>Human-Centered AI</b>, with a special interest in <b>multi-document summarization, LLM alignment,</b> and <b>low-resource and multilingual language processing</b>.</p>
             <!-- <p><span class="no-wrap"><img src="assets/images/research.png" width="16px" height="auto"></span> Currently I’m working with <span class="no-wrap"><a href='https://praneeth.mit.edu/'>Dr. Praneeth Vepakomma (MIT)</a></span> on implementing the concept of <i>layer parallelization of the training process of deep learning models</i>, something that could highly impact the field of <span class="no-wrap"><a href="https://en.wikipedia.org/wiki/Federated_learning">Federated Learning</a></span>. I’ve also previously worked on independent research projects in this area, particularly one where I implemented a secure-sum <span class="no-wrap"><a href="https://github.com/Mushtari-Sadia/Privacy-Preserving-ML-with-Secure-Sum-Protocol">gradient descent protocol</a></span> for Federated Learning using Docker. </p> -->
             
-            <p><span class="no-wrap"><img src="assets/images/research.png" width="16px" height="auto"></span> My undergraduate thesis project was under <span class="no-wrap"><a href="https://scholar.google.com/citations?user=p-w4hOUAAAAJ&hl=en&oi=ao">Dr. Rifat Shahriyar, CSE, BUET</a></span>. We created an <b><i>Effective Retrieval-Augmented Generation pipeline for Open Domain Question Answering in Bengali</i></b> . Currently, our manuscript (joint first-authored) is ready for submission. </p>
+            <p><span class="no-wrap"><img src="assets/images/research.png" width="16px" height="auto"></span> My latest paper, <a href="https://aclanthology.org/2026.findings-emnlp.1922/"><i>Understanding Subjectivity Transformation in Academic Meta-Review Generation</i></a>, appeared in <b>Findings of EMNLP 2026</b>. We study how human meta-reviewers moderate or amplify reviewer subjectivity, and whether LLMs do the same.</p>
             
-            <p><span class="no-wrap"><img src="assets/images/research.png" width="16px" height="auto"></span> I have worked as a Research Assistant under <span class="no-wrap"><a href="https://scholar.google.com/citations?user=MGijYYAAAAAJ&hl=en&oi=ao">Dr. Md. Mostofa Akbar</a></span> in the <b>Department of Computer Science and Engineering (CSE)</b> at <b>BUET</b>. Our project focuses on developing a web-based platform aimed at automating the evaluation of medical exams. This involves utilizing advanced computer vision models and optical character recognition (OCR) technology to accurately extract answers from handwritten or printed exam scripts. The integration of these technologies aims to streamline and enhance the efficiency and accuracy of the medical exam grading process. </p>
+            <p><span class="no-wrap"><img src="assets/images/research.png" width="16px" height="auto"></span> Before my PhD, my undergraduate thesis at BUET, supervised by <span class="no-wrap"><a href="https://scholar.google.com/citations?user=p-w4hOUAAAAJ&hl=en&oi=ao">Dr. Rifat Shahriyar</a></span>, built an <b><i>Effective Retrieval-Augmented Generation pipeline for Open-Domain Question Answering in Bengali</i></b>. I also worked as a Research Assistant at BUET on an OCR and vision-model system for automating medical exam grading.</p>
             <!-- <p><span class="no-wrap"><img src="assets/images/teacher.png" width="16px" height="auto"></span>Apart from my research, I am also fortunate enough to contribute to the academic community through teaching. I’m currently the instructor of undergraduate-level courses on Data Structures and Algorithms, Embedded Systems and Interfacing etc.</p> -->
              
             <!-- <p><span class="no-wrap"><img src="assets/images/cup.png" width="16px" height="auto"></span>            As an undergrad student at BUET, I've participated and won multiple prestigious competitions in the fields of <b>Machine Learning, Deep Learning, Natural Language Processing and Software Development</b> such as Herwill Datathon 2022, <span class="no-wrap"><a href="https://www.hackerearth.com/challenges/hackathon/microsoft-virtual-hackathon-2022/">Microsoft Virtual Hackathon 2022</a></span> and the <span class="no-wrap"><a href="https://www.undp.org/bangladesh/blog/womens-digital-innovation-hackathon#:~:text=AI%20based%20Dengue%20Monitor%20%26%20Control%20System">UNDP WDI Hackathon 2021</a></span> as part of a team. I’m also passionate about the advancement of women in STEM in my country. I was the president of Bangladeshi Women in Computer Science and Engineering <span class="no-wrap"><a href="https://bwcse.wordpress.com/">(BWCSE)</a></span>, where we initiated many projects to guide undergrad female students in my university to build their career in CSE. </p> -->
@@ -260,6 +272,14 @@
             </div>
   
             <ol class="timeline-list">
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Research Assistant</h4>
+                <p class="timeline-text">Department of Computer Science and Engineering,</p>
+                <p class="timeline-text">University of Connecticut</p>
+                <span>2026 — Present</span>
+                <p class="timeline-text">Working under the supervision of <span class="no-wrap"><a href="https://hesuining.weebly.com/">Dr. Suining He</a></span> in the <span class="no-wrap"><a href="https://u2clabuconn.github.io/people.html">U2C Lab</a></span> on automatic summarization of academic peer reviews (meta-review generation), multi-document summarization, and LLM alignment.</p>
+              </li>
 
               <li class="timeline-item">
                 <h4 class="h4 timeline-item-title">Adjunct Lecturer</h4>
@@ -354,6 +374,27 @@
               <h3 class="h3" id="re" data-dropdown-item>Research Experience</h3>
             </div>
             <ol class="achievement-list">
+            <li class="achievements-flex">
+              <div class="icon-box-achievements">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <div class="right-item"><h4 class="h4 timeline-item-title">Understanding Subjectivity Transformation in Academic Meta-Review Generation</h4>
+                <span>Natural Language Processing, Summarization, Subjectivity</span>
+                <span style="color: black;"><i><b>Sanju Basak</b>, Suining He</i></span>
+                <span><b>Findings of the Association for Computational Linguistics: EMNLP 2026</b>, pp. 40975&ndash;40990</span>
+                <p class="timeline-text paper-links">
+                  <span style="color: green; display: inline;"><a href="https://aclanthology.org/2026.findings-emnlp.1922/"><b>[ACL Anthology]</b></a></span>
+                  <span style="color: green; display: inline;"><a href="https://aclanthology.org/2026.findings-emnlp.1922.pdf"><b>[PDF]</b></a></span>
+                  <span style="color: green; display: inline;"><a href="https://github.com/Sanju-Basak/EMNLP26-Subjectivity-MetaReview"><b>[Code]</b></a></span>
+                </p>
+                <br/>
+                <p class="timeline-text">We study how human meta-reviewers transform reviewer subjectivity when summarizing reviews, and whether LLMs do the same. Using a sentence-level subjectivity scorer across four open LLMs and six prompt configurations, we find a "regression to the mean": highly subjective reviewer sentences are moderated while more neutral statements become more interpretive. All four LLMs reproduce this pattern, and conditioning prompts on reviewer subjectivity yields only a small calibration gain without changing the underlying transformation.</p>
+              <br/>
+              </div>
+                <div class="left-item"><figure class="fig-class">
+                  <img  class="timeline-img" src="assets/images/subjectivity.png" alt="Subjectivity transformation in meta-review generation", width="400pt", height="auto">
+                </figure></div>
+            </li>
             <li class="achievements-flex">
               <div class="icon-box-achievements">
                 <ion-icon name="book-outline"></ion-icon>
@@ -492,6 +533,15 @@
   
             <ol class="timeline-list">
   
+              <li class="timeline-item">
+  
+                <h4 class="h4 timeline-item-title">Ph.D. in Computer Science</h4>
+                <p class="timeline-text">University of Connecticut</p>
+                <span>2026 — Present</span>
+                <p class="timeline-text">Advisor: <span class="no-wrap"><a href="https://hesuining.weebly.com/">Dr. Suining He</a></span>, <span class="no-wrap"><a href="https://u2clabuconn.github.io/people.html">U2C Lab</a></span>. Research focus: meta-review summarization, multi-document summarization, LLM alignment.</p>
+                <p class="timeline-text"><br></p>
+              </li>
+
               <li class="timeline-item">
   
                 <h4 class="h4 timeline-item-title">B.Sc. in Computer Science and Engineering</h4>
@@ -731,6 +781,127 @@
         - #PORTFOLIO
       -->
 
+
+
+      <article class="portfolio" data-page="research">
+        <header>
+          <h2 class="h2 article-title">Research</h2>
+        </header>
+
+        <section class="about-text">
+          <p>I work on <b>Natural Language Processing, Information Retrieval,</b> and <b>Human-Centered AI</b>. My current research at UConn centers on automatic summarization of academic peer reviews (meta-review generation) and on keeping opinion and fact distinct in generated text, with broader interests in <b>multi-document summarization, LLM alignment,</b> and <b>low-resource and multilingual language processing</b>.</p>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box"><ion-icon name="document-text-outline"></ion-icon></div>
+            <h3 class="h3">Publications &amp; Preprints</h3>
+          </div>
+          <ol class="achievement-list">
+            <li class="achievements-flex">
+              <div class="icon-box-achievements">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <div class="right-item"><h4 class="h4 timeline-item-title">Understanding Subjectivity Transformation in Academic Meta-Review Generation</h4>
+                <span>Natural Language Processing, Summarization, Subjectivity</span>
+                <span style="color: black;"><i><b>Sanju Basak</b>, Suining He</i></span>
+                <span><b>Findings of the Association for Computational Linguistics: EMNLP 2026</b>, pp. 40975&ndash;40990</span>
+                <p class="timeline-text paper-links">
+                  <span style="color: green; display: inline;"><a href="https://aclanthology.org/2026.findings-emnlp.1922/"><b>[ACL Anthology]</b></a></span>
+                  <span style="color: green; display: inline;"><a href="https://aclanthology.org/2026.findings-emnlp.1922.pdf"><b>[PDF]</b></a></span>
+                  <span style="color: green; display: inline;"><a href="https://github.com/Sanju-Basak/EMNLP26-Subjectivity-MetaReview"><b>[Code]</b></a></span>
+                </p>
+                <br/>
+                <p class="timeline-text">We study how human meta-reviewers transform reviewer subjectivity when summarizing reviews, and whether LLMs do the same. Using a sentence-level subjectivity scorer across four open LLMs and six prompt configurations, we find a "regression to the mean": highly subjective reviewer sentences are moderated while more neutral statements become more interpretive. All four LLMs reproduce this pattern, and conditioning prompts on reviewer subjectivity yields only a small calibration gain without changing the underlying transformation.</p>
+              <br/>
+              </div>
+                <div class="left-item"><figure class="fig-class">
+                  <img  class="timeline-img" src="assets/images/subjectivity.png" alt="Subjectivity transformation in meta-review generation", width="400pt", height="auto">
+                </figure></div>
+            </li><li class="achievements-flex">
+              <div class="icon-box-achievements">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <div class="right-item"><h4 class="h4 timeline-item-title">Multi-ToM: Evaluating Multilingual Theory of Mind Capabilities in Large Language
+                Models (2024- Present)</h4>
+                <span>Natural Language Processing, Theory of Mind, Cultural Bias</span>
+                <span style="color: black;"><i>Jayanda Shadhu, Ayan Antik Khan, <b>Sanju Basak</b>, Noshin Nawal, Abhik Bhattacharjee, Rifat Shahriyar</i></span>
+                <p class="timeline-text" style="white-space: nowrap;">
+                  <span style="color: green; display: inline;"><a href="https://arxiv.org/abs/2411.15999"><b>[Preprint Available]   </b></a></span>
+                  
+                </p>
+                <br/>
+                <p class="timeline-text">We presented a multilingual <span class="no-wrap"><a href="https://en.wikipedia.org/wiki/Theory_of_mind">Theory of Mind (ToM)</a></span> dataset translated from a bilingual version, encompassing seven major languages, and also developed a culturally nuanced dataset. We evaluated six state-of-the-art large language models (LLMs) on both datasets to assess how cultural relevance impacts their social reasoning abilities. Our analysis focused on examining the variations in LLM performance across different languages and cultural contexts, highlighting the influence of linguistic and cultural diversity on the models' understanding of social reasoning.</p>
+                  </div>
+                <div class="left-item"><figure class="fig-class">
+                  <img  class="timeline-img" src="assets/images/MultiTom.png" alt="MultiTom", width="400pt", height= "auto">
+                  <!-- <figcaption><i>Image: The dashboard built with MS PowerBI</i>
+                    <a href="https://www.hackerearth.com/challenges/hackathon/microsoft-virtual-hackathon-2022/">[competition link]</a>
+                  </figcaption> -->
+                </figure></div>
+                
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box"><ion-icon name="flask-outline"></ion-icon></div>
+            <h3 class="h3">Theses &amp; Manuscripts</h3>
+          </div>
+          <ol class="achievement-list">
+            <li class="achievements-flex">
+              <div class="icon-box-achievements">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <div class="right-item"><h4 class="h4 timeline-item-title">Effective Retrieval-Augmented Generation for Open Domain Question Answering
+                in Bengali(2023 - Present)</h4>
+                <span>Natural Language Processing, Information Retrieval</span>
+                <span style="color: black;"><i><b>Sanju Basak</b>, Noshin Nawal, Rifat Shahriyar</i></span>
+                <p class="timeline-text" style="white-space: nowrap;"></p>
+                  <span style="color: green; display: inline;"><a href="https://drive.google.com/file/d/1s7ZTEs_cUvsxLmprx-WnLiZpQTfL7dZU/view?usp=sharing"><b>[Manuscript Ready for Submission]</b></a></span>
+                </p>
+                <br/>
+                <p class="timeline-text">Undergraduate thesis project under <span class="no-wrap"><a href="https://scholar.google.com/citations?user=p-w4hOUAAAAJ&hl=en&oi=ao">Dr. Rifat Shahriyar</a></span> and <span class="no-wrap"><a href="https://scholar.google.com/citations?user=J3ScR4cAAAAJ&hl=en&oi=ao">Abhik Bhattacharjee (Research Assistant, Department of CSE, BUET)</a></span>. In this work, I co-developed the first-ever Bengali Retrieval-Augmented Generation (RAG) pipeline. This work involved benchmarking two Bengali open-domain question-answering datasets—<span class="no-wrap"><a href="https://huggingface.co/datasets/csebuetnlp/squad_bn">SQuAD BN</a></span> and <span class="no-wrap"><a href="https://huggingface.co/datasets/sartajekram/BanglaRQA">BanglaRQA</a></span>—using six state-of-the-art embedding models and three retrieval methods, covering both sparse and dense approaches. We evaluated the performance of three large language models (LLMs) with and without the RAG pipeline, analyzing their factual response capabilities on Bengali-region specific data in comparison to global data.</p>
+              <br/>   
+              </div>
+                <div class="left-item"><figure class="fig-class">
+                  <img  class="timeline-img" src="assets/images/Rag_thesis.png" alt="apt", width="400pt", height="auto">
+                  <!-- <figcaption><i>Image: The dashboard built with MS PowerBI</i>
+                    <a href="https://www.hackerearth.com/challenges/hackathon/microsoft-virtual-hackathon-2022/">[competition link]</a>
+                  </figcaption> -->
+                </figure></div>
+            </li><li class="achievements-flex">
+              <div class="icon-box-achievements">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <div class="right-item"><h4 class="h4 timeline-item-title">Reviving Inert Brains: Investigating Signal Processing and Memory Potential
+
+                in Detached Goat Brains (2021-Present)</h4>
+                <span>Computational Neuroscience</span>
+                <span style="color: black;"><i>Farbin Fayza, Aaiyeesha Mostak, Mashiyat Mahjabin Prapty, Md Toki Tahmid, Md. Asif Haider, <b>Sanju Basak</b>, Md. Mehrab Haque, Anup Bhowmik, K. M. Asifur Rahman, Azizur Rahman Anik, Nafis Karim, A. B. M. Alim Al Islam</i></span>
+                <p class="timeline-text" style="white-space: nowrap;">
+                  <span style="color: green; display: inline;"><a href="https://drive.google.com/file/d/1-nQqEDB8rRKmpuJ7pDywqSLUNDCVnU9r/view?usp=sharing"><b>[Manuscript Ready for Submission]   </b></a></span>
+                  <span style="color: red; display: inline;"><b><i>(Best Student Poster @ NSysS '21)</i></b></span>
+                </p>
+
+                <br/>
+                <p class="timeline-text">We investigate the potential of a deceased animal brain to process signals. Specifically, we examine the brain’s responses to external stimuli in the form of electrical signals and its ability to act as a memory unit. We also explore the transfer characteristics of the deceased goat brain and elucidate the corresponding function through representative circuits.</p>
+              
+              <br/>
+              <span>NSysS 2021: <span class="no-wrap"><a href="https://www.researchgate.net/publication/357335958_Is_It_Really_Dead_-Digging_into_Dead_Brains_through_Analyzing_Its_Behavior_in_Response_to_Inducing_External_Impulses">[Poster Presentation]</a></span></span>              
+            </div>  
+              <div class="left-item"><figure class="fig-class">
+                  <img  class="timeline-img" src="assets/images/dead_brain.png" alt="EGU", width="400px", height="auto">
+                  <!-- <figcaption><i>Image: The dashboard built with MS PowerBI</i>
+                    <a href="https://www.hackerearth.com/challenges/hackathon/microsoft-virtual-hackathon-2022/">[competition link]</a>
+                  </figcaption> -->
+                </figure></div>
+            </li>
+          </ol>
+        </section>
+
+      </article>
 
 
       <article class="portfolio" data-page="projects">
@@ -1331,19 +1502,9 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Personal Email</p>
+              <p class="contact-title">Email</p>
 
-              <a href="mailto:sanjubasakndc18@gmail.com" class="contact-link">sanjubasakndc18 AT gmail DOT com</a>
-            </div>
-
-            <div class="icon-box">
-              <ion-icon name="mail"></ion-icon>
-            </div>
-            
-            <div class="contact-info">
-              <p class="contact-title">Work Email</p>
-
-              <a href="mailto:sanju@ra.cse.buet.ac.bd" class="contact-link">sanju AT ra DOT cse DOT buet DOT ac DOT bd</a>
+              <a href="mailto:sanju.basak@uconn.edu" class="contact-link">sanju.basak AT uconn DOT edu</a>
             </div>
 
 
