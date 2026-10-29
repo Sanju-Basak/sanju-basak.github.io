@@ -18,7 +18,25 @@
 
 
 
-document.body.classList.toggle("white");
+// theme: light by default ("white" class), dark when saved as "dark"
+const themeBtn = document.getElementById("darkmode");
+const applyTheme = function (theme) {
+  document.body.classList.toggle("white", theme !== "dark");
+  if (themeBtn) {
+    const icon = themeBtn.querySelector("ion-icon");
+    if (icon) icon.setAttribute("name", theme === "dark" ? "sunny-outline" : "moon-outline");
+  }
+};
+let savedTheme = "light";
+try { savedTheme = localStorage.getItem("theme") || "light"; } catch (e) {}
+applyTheme(savedTheme);
+if (themeBtn) {
+  themeBtn.addEventListener("click", function () {
+    const next = document.body.classList.contains("white") ? "dark" : "light";
+    applyTheme(next);
+    try { localStorage.setItem("theme", next); } catch (e) {}
+  });
+}
 
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
@@ -248,19 +266,14 @@ resume.addEventListener("click", function () {
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
 
-    for (let i = 0; i < pages.length; i++) {
-      console.log(pages[i].dataset.page+ " page"); 
-      console.log(this.innerHTML.toLowerCase()+" this"); 
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
-      } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
-      }
+    const target = this.innerHTML.toLowerCase();
+    for (let k = 0; k < pages.length; k++) {
+      pages[k].classList.toggle("active", pages[k].dataset.page === target);
     }
+    for (let k = 0; k < navigationLinks.length; k++) {
+      navigationLinks[k].classList.toggle("active", navigationLinks[k] === this);
+    }
+    window.scrollTo(0, 0);
 
   
   // navigationLinks[i].addEventListener("mouseenter", function () {
