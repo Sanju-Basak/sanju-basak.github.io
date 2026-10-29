@@ -237,7 +237,9 @@ table, th, td {
   padding: 10px; /* Add padding to the cells */
   text-align: left; /* Align text to the left within cells */
   border: 1px solid black; /* Add borders to the cells */
+  color: var(--light-gray);
 }
+body:not(.white) table, body:not(.white) th, body:not(.white) td { border-color: var(--jet); }
 
 th, td {
   width: 50%; /* Equal width for all cells */
@@ -2166,4 +2168,29 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .timeline-text { max-width: 700px; }
 
+}
+
+
+/* publication links on one line */
+.paper-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  white-space: normal !important;
+}
+.paper-links span, .paper-links a { display: inline; }
+
+/* dark-mode readability fixes */
+body:not(.white) .timeline-text a,
+body:not(.white) .about-text a,
+body:not(.white) .achievement-list a { color: hsl(215, 90%, 72%); }
+body:not(.white) span[style*="color: black"] { color: var(--light-gray) !important; }
+
+/* theme toggle icon */
+#darkmode { display: flex; align-items: center; font-size: 20px; }
+#darkmode ion-icon { pointer-events: none; }
+
+/* keep page titles clear of the top-right navbar on desktop */
+@media (min-width: 1024px) {
+  article { padding-top: 85px; }
 }
